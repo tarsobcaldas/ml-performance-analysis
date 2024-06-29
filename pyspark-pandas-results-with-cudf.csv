@@ -1,0 +1,30 @@
+task,duration
+read file,0.14639473
+count,0.493699551
+count index length,0.247537136
+mean,0.866142273
+standard deviation,1.292271614
+mean of columns addition,1.392565966
+addition of columns,18.14041185
+mean of columns multiplication,1.281121254
+multiplication of columns,15.4036026
+value counts,4.912163258
+complex arithmetic ops,43.27641964
+mean of complex arithmetic ops,33.61191821
+groupby statistics,4.681224585
+join count,2.921364307
+join,29.91014552
+filtered count,0.929896832
+filtered count index length,0.706884384
+filtered mean,1.253710985
+filtered standard deviation,1.458399534
+filtered mean of columns addition,1.351557732
+filtered addition of columns,4.736688852
+filtered mean of columns multiplication,1.177265167
+filtered multiplication of columns,4.092351437
+filtered mean of complex arithmetic ops,63.34302187
+filtered complex arithmetic ops,74.79325986
+filtered value counts,5.195305586
+filtered groupby statistics,2.730046988
+filtered join,112.6076639
+filtered join count,10.93387222

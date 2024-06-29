@@ -1,5 +1,5 @@
 import os
-import databricks.koalas as ks
+import pyspark.pandas as ks
 import numpy as np
 import pandas as pd
 from benchmark import benchmark
@@ -8,7 +8,7 @@ from benchmark import benchmark
 home = os.path.expanduser('~')
 
 def read_file_parquet(df=None):
-    return ks.read_parquet(f'{home}/ml-performance-analysis/data/2009', index_col='index')
+    return ks.read_parquet(f'{home}/ml-performance-analysis/formatted-data/2009', index_col='index')
   
 def count(df=None):
     return len(df)
@@ -86,7 +86,7 @@ np.int = int
 np.bool = bool
 np.float = float
 
-koalas_data = ks.read_parquet(f'{home}/ml-performance-analysis/data/2009', index_col='index')
+koalas_data = ks.read_parquet(f'{home}/ml-performance-analysis/formatted-data/2009', index_col='index')
  
 koalas_benchmarks = {
     'duration': [],  # in seconds

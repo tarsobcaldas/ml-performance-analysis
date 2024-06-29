@@ -1,12 +1,13 @@
 import pandas as pd
 import numpy as np
-import databricks.koalas as ks
+import pyspark as ps
+import pyspark.pandas as ks
 import dask.dataframe as dd
 from dask.distributed import Client, LocalCluster
  
 print('pandas version: %s' % pd.__version__)
 print('numpy version: %s' % np.__version__)
-print('koalas version: %s' % ks.__version__)
+print('pyspark version: %s' % ps.__version__)
 import dask
 print('dask version: %s' % dask.__version__)
  

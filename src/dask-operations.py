@@ -8,7 +8,7 @@ import os
 home = os.path.expanduser('~')
 
 def read_file_parquet(df=None):
-    return dd.read_parquet(f'{home}/ml-performance-analysis/data/2009')
+    return dd.read_parquet(f'{home}/ml-performance-analysis/formatted-data/2009')
   
 def count(df=None):
     return len(df)
@@ -73,7 +73,7 @@ def join_data(df, other):
     return dd.merge(df, other, left_index=True, right_index=True).compute()
 
  
-dask_data = dd.read_parquet(f'{home}/ml-performance-analysis/data/2009', index='index')
+dask_data = dd.read_parquet(f'{home}/ml-performance-analysis/formatted-data/2009', index='index')
  
 dask_benchmarks = {
     'duration': [],  # in seconds
